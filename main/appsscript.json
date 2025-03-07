@@ -1,0 +1,19 @@
+{
+  "timeZone": "America/Caracas",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "LolaFunctions",
+        "libraryId": "11bWnL63X8yakGBPTE1OzUxtDVo3qMJ6HMM8aCzpIN9u9ZBPYxSHUEo-p",
+        "version": "0",
+        "developmentMode": true
+      }
+    ]
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "MYSELF"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}

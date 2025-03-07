@@ -1,0 +1,11 @@
+<script>
+
+  document.getElementById("btn").addEventListener("click",buttonClicked);
+
+  function buttonClicked(){
+    var clientName = document.getElementById("clientname").value;
+    google.script.run.userClicked(clientName);
+    document.getElementById("clientname").value = "";
+  }
+
+</script>
