@@ -1,17 +1,3 @@
-
-/**
- * Maneja las solicitudes GET y devuelve una plantilla HTML evaluada.
- *
- * @return {HtmlOutput} La salida HTML evaluada de la plantilla "home".
- */
-function doGet() {
-  var template = HtmlService.createTemplateFromFile("home");
-  template.clientes = getOptions(); //Obtengo las opciones para el dropdown
-
-  return template.evaluate();
-
-}
-
 function getOptions() {
 
   return [
@@ -20,11 +6,6 @@ function getOptions() {
     { email: "cliente3@example.com" }
   ];
 
-}
-
-//esta funcion es para traer los parametros de home.html (css y js)
-function include(filename){
-  return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }
 
 function onOpen(){
